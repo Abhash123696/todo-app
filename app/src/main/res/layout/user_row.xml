@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5mdp"
+    android:elevation="@dimen/_8mdp"
+    android:padding="@dimen/_8mdp"
+    app:cardCornerRadius="@dimen/_16mdp"
+    app:cardMaxElevation="@dimen/_8mdp">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutUserDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E1D9D1"
+        android:orientation="vertical"
+        android:padding="@dimen/_5mdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_40mdp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5mdp"
+                android:src="@drawable/user_profile"
+                android:layout_marginStart="@dimen/_5mdp"
+                android:layout_marginRight="@dimen/_8mdp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5mdp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tvUsernameShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5mdp"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13font_mdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvUserEmailShow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5mdp"
+                    android:fontFamily="@font/texgyreadventor_regular"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10font_mdp" />
+
+                <TextView
+                    android:id="@+id/tvUserAddressShow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5mdp"
+                    android:fontFamily="@font/texgyreadventor_regular"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10font_mdp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_30mdp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/_14mdp"
+                    android:layout_height="@dimen/_14mdp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/gender" />
+
+                <TextView
+                    android:id="@+id/tvUserGenderShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_22mdp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_6mdp"
+                    android:background="@drawable/background_shape"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/_10mdp"
+                    android:paddingRight="@dimen/_10mdp"
+                    android:text="Male"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10font_mdp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_10mdp"
+            android:background="#45B8B1AB" />
+
+        <TextView
+            android:id="@+id/tvUserDescriptionShow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5mdp"
+            android:layout_marginTop="@dimen/_8mdp"
+            android:layout_marginBottom="@dimen/_10mdp"
+            android:fontFamily="@font/texgyreadventor_regular"
+            android:maxLines="3"
+            android:textColor="@color/black"
+
+            />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

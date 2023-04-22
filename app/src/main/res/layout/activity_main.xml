@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    tools:context=".activity.MainActivity">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    >
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+
+
+
+    <ImageView
+        android:id="@+id/emptyViewImage"
+        android:layout_width="@dimen/_180mdp"
+        android:layout_height="@dimen/_180mdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/empty_data"
+        android:padding="@dimen/_8mdp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/emptyViewTv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAlignment="center"
+        android:text="Oops, the data is empty. Please add the data."
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16font_mdp"
+        android:fontFamily="@font/texgyreadventor_regular"
+        android:visibility="gone"
+        />
+
+
+</LinearLayout>
+
+</RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewShowUserList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/goToAddActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/background_color_button"
+        android:src="@drawable/ic_baseline_add_24"
+        app:borderWidth="0dp"
+        app:layout_anchor="@id/recyclerviewShowUserList"
+        app:layout_anchorGravity="bottom|right|end"
+        android:baselineAlignBottom="true"
+        app:tint="#ffffff" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
